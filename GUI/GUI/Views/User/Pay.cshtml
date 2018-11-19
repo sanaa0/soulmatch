@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Payment";
+}
+<center>
+    <h1>Payment</h1>
+    <h2>Please enter your details for payment</h2>
+    <h3>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="Account number">Account number</label>
+                <input type="text" class="form-control" id="Account number">
+            </div>
+            <div class="form-group">
+                <label for="amount">Enter the amount</label>
+                <input type="text" class="form-control" id="amount">
+            </div>
+            <div class="form-group">
+                <label for="code">Code</label>
+                <input type="text" class="form-control" id="pwd">
+            </div>
+
+            <button type="submit" class="btn btn-lg">Pay</button>
+        </form>
+    </h3>
+</center>

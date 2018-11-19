@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Notifications";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" media="screen and (max-height: 450px)" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-height: 450px)" />
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 60px;
+        }
+
+            .sidenav a {
+                padding: 6px 6px 6px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+
+        .main {
+            margin-left: 200px; /* Same as the width of the sidenav */
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="sidenav">
+
+        <a href="http://localhost:57783/User/">User Profile</a>
+        <a href="http://localhost:57783/User/Notification">Notifications</a>
+        <a href="http://localhost:57783/User/SearchProposal">Search</a>
+        <a href="http://localhost:57783/User/UserReq">Requests</a>
+    </div>
+
+    <div class="main">
+
+
+        <h2>Notification</h2>
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Status</th>
+                    <th>Details</th>
+                    <th>Payment</th>
+                </tr>
+
+                <tr>
+                    <td>Jill</td>
+                    <td>london</td>
+                    <td>Unpaid</td>
+                    <td><button type="button" class="btn btn-primary">Details</button></td>
+                    <td><a href="http://localhost:57783/User/Pay">payment</a></td>
+
+
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+</html>
+
+
+

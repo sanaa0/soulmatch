@@ -1,0 +1,114 @@
+﻿@model IEnumerable<GUI.Models.User>
+
+@{
+    ViewBag.Title = "Search Proposal";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" media="screen and (max-height: 450px)" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-height: 450px)" />
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 60px;
+        }
+
+            .sidenav a {
+                padding: 6px 6px 6px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+
+        .main {
+            margin-left: 200px; /* Same as the width of the sidenav */
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="sidenav">
+
+        <a href="http://localhost:57783/User/">User Profile</a>
+        <a href="http://localhost:57783/User/Notification">Notifications</a>
+        <a href="http://localhost:57783/User/SearchProposal">Search</a>
+        <a href="http://localhost:57783/User/UserReq">Requests</a>
+    </div>
+
+    <div class="main">
+
+        <h2>SearchProposal</h2>
+
+        <p>
+            <label for="usr">Choice:</label>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Select Category
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">CAST</a></li>
+                    <li><a href="#">AGE</a></li>
+                    <li><a href="#">PROFESSION</a></li>
+                    <li><a href="#">RELIGION</a></li>
+                    <li><a href="#">CITY</a></li>
+                </ul>
+            </div>
+            <label for="usr">Choose:</label>
+            <input type="text" />
+            <button class=" btn-primary">Search</button>
+        </p>
+        <table class="table table-bordered table-responsive">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Age</th>
+                    <th>Profession</th>
+                    <th>View Profile</th>
+                    <th>Send Request</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zainab</td>
+                    <td>Lahore</td>
+                    <td>20</td>
+                    <td>Engineer</td>
+                    <td class=" btn-link"><a href="http://localhost:57783/User/Details">View Profile</a></td>
+                    <td class=" btn btn-primary btn-block">Send Request</td>
+                </tr>
+            </tbody>
+
+
+        </table>
+
+    </div>
+
+
+
+</body>
+</html>
+
+
+
+
